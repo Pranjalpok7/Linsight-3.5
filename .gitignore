@@ -1,0 +1,51 @@
+# --- Python Virtual Environments ---
+# This is the most important section for you.
+# It will ignore your entire virtual environment folder.
+AI-RA/
+venv/
+.venv/
+
+# --- Python Cache Files ---
+# These are generated automatically and should never be in version control.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*egg-info/
+
+# --- Environment Variables ---
+# The .env file contains secrets and should NEVER be committed to GitHub.
+.env
+
+# --- IDE and OS Specific Files ---
+# These are configuration files for specific editors or operating systems.
+# Ignoring them makes the project cleaner for other developers.
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# --- Docker & Build Artifacts ---
+# While your Dockerfile is needed, the files Docker generates are not.
+.dockerignore
+.docker-compose.yaml.swp # vim swap file for docker-compose
+
+# --- Large Model & Data Files ---
+# Good practice to ignore common large file types from AI/ML projects.
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.h5
+*.joblib
+*.pkl
+
+# --- Log files ---
+*.log
+logs/
+
+# --- Test Artifacts ---
+.pytest_cache/
+.coverage
+htmlcov/
